@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- html>head>style^body -->
+<html>
+<head>
+    <style>
+        .note > h1 {
+            color: red;
+        }
+
+        /* 자손 선택자 : 클래스가 note인 요소의 자손인 p요소 */
+        .note p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- .note>.error>h1>lorem3^p>lorem -->
+    <div class="note">
+        <div class="error">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis rem temporibus culpa et commodi recusandae tempore tenetur necessitatibus harum nihil corporis ut accusamus eius, eum illum praesentium itaque repellendus.</p>
+        </div>
+    </div>
+    <!-- .note>h1>lorem3^p>lorem -->
+    <div class="note">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore, quas itaque illum quibusdam asperiores excepturi vero sapiente sed enim corrupti a exercitationem repellat consequatur adipisci laborum officia assumenda vel.</p>
+    </div>
+</body>
+</html>
