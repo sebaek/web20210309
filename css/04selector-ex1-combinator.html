@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- html>head>style^body -->
+<html>
+<head>
+    <style>
+        /* div 요소의 자식인 h1 요소 */
+        div > h1 {
+            color: red;
+        }
+
+        /* 클래스가 note 요소의 자식인 p 요소 */
+        .note > p {
+            text-decoration: underline;
+        }
+
+        .error > h1 {
+            background-color: gold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- div>h1>lorem3^p>lorem -->
+    <div class="note">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quae molestias eaque, id at illum nobis alias aperiam aut blanditiis placeat quibusdam modi minus nam vitae fugit, autem fugiat veniam.</p>
+    </div>
+
+    <!-- .error>h1>lorem3^p>lorem -->
+    <div class="error">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sequi nam architecto dignissimos aut voluptatibus quisquam quod perspiciatis tempore incidunt. Vel corporis velit amet illo aperiam distinctio maiores deserunt error.</p>
+    </div>
+
+    <div class="error">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sequi nam architecto dignissimos aut voluptatibus quisquam quod perspiciatis tempore incidunt. Vel corporis velit amet illo aperiam distinctio maiores deserunt error.</p>
+    </div>
+
+    <h1>Lorem, ipsum dolor.</h1>
+</body>
+</html>
