@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div {
+        border : 2px solid black;
+    }
+    #div1 {
+        width: 300px;
+        height: 200px;
+    }
+    #div2 {
+        height: 200px;
+        width: 50%; /* 부모 요소 너비 기준 */
+    }
+    #div3 {
+        border: 50px solid green;
+        width: 300px;
+        height: 200px;
+    }
+    #div4 {
+        box-sizing: border-box;
+        border: 50px solid blue;
+        width: 300px;
+        height: 200px;
+    }
+    #div5 {
+        border-width: 0px;
+        width: 300px;
+        height: 200px;
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+    <!-- (#div$+hr)*5 -->
+    <div id="div1"></div>
+    <hr>
+    <div id="div2"></div>
+    <hr>
+    <div id="div3"></div>
+    <hr>
+    <div id="div4"></div>
+    <hr>
+    <div id="div5"></div>
+    <hr>
+</body>
+</html>
