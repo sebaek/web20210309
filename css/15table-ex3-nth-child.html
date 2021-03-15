@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    p:nth-child(1) {
+        background-color: blue;
+    }
+    p:nth-child(2) {
+        background-color: green;
+    }
+    p:nth-child(odd) {
+        text-decoration: underline;
+    }
+    p:nth-child(even) {
+        font-weight: bold;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        height: 30px;
+    }
+    tr:nth-child(even) {
+        background-color: #ccc;
+    }
+
+
+</style>
+</head>
+<body>
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam ipsa odio, eum facere earum blanditiis cumque a quod. Sint suscipit voluptatem nobis quisquam aliquid, in rerum quas consectetur vero!</p>
+    <p>Odio sed perspiciatis voluptates assumenda. Quod quos reprehenderit tempore a? Vero hic ab consectetur architecto fugiat saepe, voluptate ducimus numquam inventore, culpa maxime, repudiandae reiciendis libero aut ut dolorem recusandae.</p>
+    <p>Sapiente nam alias debitis excepturi. Voluptates necessitatibus quasi optio minima numquam dolore blanditiis nobis, deserunt incidunt iste neque minus vitae fugiat nemo, veritatis officia, rerum at! Laudantium quam a dolorum!</p>
+    <p>Non ea iusto repellat accusantium corporis a saepe fugit ut at nostrum est nesciunt nemo tempora porro quasi, magnam tenetur numquam pariatur quidem iste molestiae. Fugiat quis harum atque cumque.</p>
+    <p>Doloremque deleniti ipsam quas, a expedita nisi, unde, eligendi nemo non consequuntur voluptatem ipsum numquam! Dolorum rerum mollitia quam in asperiores impedit. Doloribus voluptatem non alias est odio deserunt optio.</p>
+</div>
+
+<!-- table>tr>th*3>lorem1^^tr*4>td*3>lorem1 -->
+<table>
+    <tr>
+        <th>Lorem.</th>
+        <th>Unde.</th>
+        <th>Alias.</th>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Veritatis.</td>
+        <td>Fuga.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Corporis!</td>
+        <td>Voluptatibus!</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Eligendi?</td>
+        <td>Quia.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Facilis!</td>
+        <td>Hic.</td>
+    </tr>
+</table>
+</body>
+</html>
