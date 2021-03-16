@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="all.min.js"></script>
+<style>
+    .wrapper {
+        display: flex;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+    }
+    .main {
+        color: white;
+        font-size: 30px;
+        padding: 15px;
+    }
+    .main:hover {
+        background-color: green;
+    }
+</style>
+</head>
+<body>
+<!-- .navbar>.wrapper>.main*6>lorem1^^.wrapper>.main*3>lorem1 -->
+<div class="navbar">
+    <div class="wrapper">
+        <div class="main"><i class="fas fa-bars"></i></div>
+        <div class="main"><i class="fas fa-home"></i></div>
+        <div class="main">HTML</div>
+        <div class="main">CSS</div>
+        <div class="main">JAVASCRIPT</div>
+        <div class="main">MORE<i class="fas fa-caret-down"></i></div>
+    </div>
+    <div class="wrapper">
+        <div class="main"><i class="fas fa-adjust"></i></div>
+        <div class="main"><i class="fas fa-globe-americas"></i></div>
+        <div class="main"><i class="fas fa-search"></i></div>
+    </div>
+</div>
+</body>
+</html>
