@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .main {
+        padding: 0px;
+        margin: 0px;
+    }
+    .main > li {
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        border: 5px solid green;
+        position: relative;
+    }
+    .sub {
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        top: -5px;
+        left: 195px;
+        list-style-type: none;
+        display: none;
+    }
+    .sub > li {
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        border: 5px solid blue;
+    }
+    .main>li:hover>.sub {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<!-- ul.main>li*5>lorem1 -->
+<ul class="main">
+    <li>Lorem.
+        <!-- ul.sub>li*5>lorem1 -->
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Nulla.</li>
+            <li>Ducimus?</li>
+            <li>Accusantium!</li>
+            <li>Dolores?</li>
+        </ul>
+    </li>
+    <li>Quam.
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Voluptatem?</li>
+            <li>Harum!</li>
+            <li>Nulla!</li>
+            <li>Inventore?</li>
+        </ul>
+    </li>
+    <li>Magni.
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Obcaecati.</li>
+            <li>Sequi.</li>
+            <li>Totam.</li>
+            <li>Quisquam?</li>
+        </ul>
+    </li>
+    <li>Odit.
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Ullam!</li>
+            <li>Maxime.</li>
+            <li>Soluta?</li>
+            <li>Ad?</li>
+        </ul>
+    </li>
+    <li>Libero.
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Ad.</li>
+            <li>Voluptatibus.</li>
+            <li>Modi?</li>
+            <li>Repudiandae.</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
