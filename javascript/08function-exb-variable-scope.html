@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+    <script>
+
+        // 변수(var) 는 2개의 영역 중 하나에 속하게됨
+        // 1. global(전역 변수)
+        // 2. function(함수 영역)
+
+        function myfunc(params) {
+            var a = 3; // 함수 영역(scope)
+            console.log(a);
+            console.log(b);
+        }
+
+        function myfunc2() {
+            var a = 4; // 함수 영역
+            var b = 6;
+            c = 7;// global 전역변수
+            console.log(a);
+            console.log(b);
+        }
+
+        var b = 5; // global (전역 변수);
+
+        myfunc();
+        myfunc2();
+        console.log(b);
+        // console.log(a);
+
+    </script>
+</body>
+</html>
