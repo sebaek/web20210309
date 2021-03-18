@@ -28,10 +28,11 @@
         function process() {
             // input1 아이디를 가진 element를 document에서 얻어서
             // value 속성을 읽어서 변수에 할당한다.
-
+            var fah = document.getElementById("input1").value;
             // toCelsius 함수를 위에서 얻은 값을 인수로 넣어서
             // 호출한 결과를 
             // celsius 변수에 할당한다.
+            var celsius = toCelsius(fah);
             document.getElementById("input2").value = celsius;
         }
 
