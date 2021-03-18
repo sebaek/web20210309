@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<script>
+    myFunc();
+
+    // hoisting ok
+    function myFunc(params) {
+        console.log("abc");
+    }
+
+    func2();
+
+    // 변수에 함수를 할당
+    // hoistin not ok
+    var func2 = function(params) {
+        console.log("no name");
+    }
+
+    
+</script>
+</body>
+</html>
