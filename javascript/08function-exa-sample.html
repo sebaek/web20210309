@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<input type="text" id="input1">
+<br>
+<input type="text" id="input2">
+<br>
+<button onclick="process()"><i class="fas fa-plus"></i></button>
+<br>
+<input type="text" id="result" readonly>
+
+<script>
+function process() {
+    var a = document.getElementById("input1");
+    var b = document.getElementById("input2");
+    var c = add(a, b);
+    document.getElementById("result").value = c;
+}
+</script>
+</body>
+</html>
