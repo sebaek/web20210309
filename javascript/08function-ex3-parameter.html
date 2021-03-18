@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        var a = 3;
+
+        // parameter : 매개변수, 인자, 인수
+        function func1(params) {
+            console.log("func1 function");
+            console.log(params);
+        }
+
+        // argument : 매개값, 인자, 인수
+        func1(99);
+
+        // parameter는 0개 이상 가능
+        function func2() {
+            console.log("func2 function");
+        }
+        func2(99);
+
+        function func3(param1, param2) {
+            console.log("func3 function");
+            console.log(param1);
+            console.log(param2);
+        }
+
+        func3(55, 'donald');
+        func3(55);
+        func3();
+    </script>
+</body>
+</html>
