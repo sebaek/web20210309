@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<script>
+    lotto();
+    function lotto() {
+        var balls = [];
+
+        while (balls.length < 6) {
+            var newNumber = getNum();
+            if (!balls.includes(newNumber)) {
+                balls.push(newNumber);
+            }
+        }
+
+        for (var i = 0; i < 6; i++) {
+            console.log(balls[i]);
+        }
+    }
+
+    function getNum() {
+        return Math.floor(Math.random()*45)+1;
+    }
+
+</script>
+</body>
+</html>
