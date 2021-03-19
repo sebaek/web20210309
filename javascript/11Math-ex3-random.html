@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        // 0 <= r < 1
+        var r = Math.random();
+        console.log(r);
+
+        // 곱하기 10
+        // 0 <= r * 10 < 10
+        r = r * 10;
+        console.log(r);
+
+        // 소수점 이하 버리기 
+        // 0 <= Math.floor(r * 10) <= 9
+        r = Math.floor(r);
+        console.log(r);
+
+        // 더하기 1
+        // 1 <= Math.floor(r * 10) + 1 <= 10
+        r = r + 1;
+        console.log(r);
+
+        // 위의 식을 한번에 작성
+        console.log(Math.floor(Math.random() * 10) + 1);
+        
+
+    </script>
+</body>
+</html>
