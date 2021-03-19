@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        var car = {
+            name: "fiat",
+            start: function () {
+                console.log("차가 출발합니다.");
+            },
+            stop: function () {
+                console.log("차가 멈춥니다.");
+            },
+            setSpeed: function (speed) {
+                console.log("속도를" + speed + "로 바꿉니다.");
+            },
+            add: function (a, b) {
+                return a + b;
+            }
+        }
+        car.start();
+        car.stop();
+        car.setSpeed(100);
+        car.add(3, 5);
+        var c = car.add(99, 1);
+        console.log(c);
+        console.log(car.add(88, 11));
+
+    </script>
+</body>
+
+</html>
