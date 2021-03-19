@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="../css/all.min.css">
-<style>
-</style>
-</head>
-<body>
-<!-- button[onclick]{번호 추첨} -->
-<button onclick="lotto()">번호 추첨</button>
-<!-- div.result*6 -->
-<div class="result"></div>
-<div class="result"></div>
-<div class="result"></div>
-<div class="result"></div>
-<div class="result"></div>
-<div class="result"></div>
-
-<script>
-    function lotto() {
-        var elems = document.getElementsByClassName("result");
-
-        for (var i = 0; i < 6; i++) {
-            elems[i].innerHTML = Math.floor(Math.random() * 45) + 1; 
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        .result-container {
+            display: flex;
+            height: 100px;
+        }
+        .resultWrapper {
+            display: flex;
+            width: 100px;
+            /* height: 50px; */
+            background-color: chartreuse;
         }
 
-        // elems[0].innerHTML = Math.floor(Math.random() * 45) + 1;
-        // elems[1].innerHTML = Math.floor(Math.random() * 45) + 1;
-        // elems[2].innerHTML = Math.floor(Math.random() * 45) + 1;
-        // elems[3].innerHTML = Math.floor(Math.random() * 45) + 1;
-        // elems[4].innerHTML = Math.floor(Math.random() * 45) + 1;
-        // elems[5].innerHTML = Math.floor(Math.random() * 45) + 1;
-    }
-</script>
+        .result {
+            background-color: burlywood;
+            color: white;
+            width: 50px;
+            /* height: 30px; */
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- button[onclick]{번호 추첨} -->
+    <button onclick="lotto()">번호 추첨</button>
+    <!-- div.result*6 -->
+    <div class="result-container">
+
+        <div class="resultWrapper">
+            <div class="result"></div>
+        </div>
+        <div class="resultWrapper">
+            <div class="result"></div>
+        </div>
+        <div class="resultWrapper">
+            <div class="result"></div>
+        </div>
+        <div class="resultWrapper">
+            <div class="result"></div>
+        </div>
+        <div class="resultWrapper">
+            <div class="result"></div>
+        </div>
+        <div class="resultWrapper">
+            <div class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        function lotto() {
+            var elems = document.getElementsByClassName("result");
+
+            for (var i = 0; i < 6; i++) {
+                elems[i].innerHTML = Math.floor(Math.random() * 45) + 1;
+            }
+
+            // elems[0].innerHTML = Math.floor(Math.random() * 45) + 1;
+            // elems[1].innerHTML = Math.floor(Math.random() * 45) + 1;
+            // elems[2].innerHTML = Math.floor(Math.random() * 45) + 1;
+            // elems[3].innerHTML = Math.floor(Math.random() * 45) + 1;
+            // elems[4].innerHTML = Math.floor(Math.random() * 45) + 1;
+            // elems[5].innerHTML = Math.floor(Math.random() * 45) + 1;
+        }
+    </script>
 </body>
+
 </html>
-
-
-
