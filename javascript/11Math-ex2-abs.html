@@ -15,12 +15,18 @@
     <!-- button{두 값의 차} -->
     <button onclick="diff()">두 값의 차</button>
 
-    <p>두 값의 차이는 <span id="result"></span>입니다.</p>
+    <p>두 값의 차이는 <span class="result"></span>입니다.</p>
 <script>
     console.log(Math.abs(3));
     console.log(Math.abs(0));
     console.log(Math.abs(-3));
     console.log(Math.abs(-10));
+
+    function diff() {
+        var a = document.getElementById("input1").value;
+        var b = Number(document.getElementById("input2").value);
+        document.getElementsByClassName("result")[0].innerHTML = Math.abs(a - b);
+    }
 
 </script>
 </body>
