@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<input type="text" id="input1">
+<br>
+<!-- button[onclick]{분리} -->
+<button onclick="split()">분리</button>
+<p>앞자리: <span id="span1"></span></p>
+<p>뒷자리: <span id="span2"></span></p>
+
+<script>
+    function split() {
+        var full = document.getElementById("input1").value;
+        var minusIndex = full.indexOf("-");
+
+        var left = full.substring(0, minusIndex);
+        var right = full.substring(minusIndex + 1);
+        document.getElementById("span1").innerHTML = left;
+        document.getElementById("span2").innerHTML = right;
+    }
+
+</script>
+
+</body>
+</html>
