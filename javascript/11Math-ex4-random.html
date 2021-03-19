@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<button onclick="randomNumber()">번호 뽑기</button>
+<div id="result1"></div>
+
+<script>
+function randomNumber() {
+    // 1 ~ 45 값이 6개 일치해야함.
+    var ran = Math.floor(Math.random() * 45) + 1;
+    document.getElementById("result1").innerHTML = ran;
+}
+</script>
+</body>
+</html>
