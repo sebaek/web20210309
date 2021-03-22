@@ -16,6 +16,8 @@
 <script>
     function add() {
         var text = document.querySelector("input").value;
+        text = text.trim();
+        
         var ul = document.getElementById("result");
         // if (text != "")
         if (text) {
