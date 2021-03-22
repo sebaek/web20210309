@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        console.log("boolean");
+
+        var a = true;
+        if (a) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        console.log("number");
+        // 0이 아니면 true
+        var b = -3;
+        if (b) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        b = 0;
+        if (b) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        console.log("string");
+        // 빈 스트링이 아니면 true
+        var c = '';
+
+        if (c) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        c = ' ';
+        if (c) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        console.log("undefined");
+        var d; // undefined --> false
+        if (d) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+    </script>
+</body>
+</html>
