@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<script>
+    var a = 5;
+
+    // 증가 연산자(increment)
+    // ++
+    // 피연산자의 값에 1을 더한 후 다시 피연산자에 할당
+    a++;
+    console.log(a); // 6
+
+
+    // 감소 연산자(decrement)
+    // --
+    // 피연산자의 값에 1을 뺀 후 다시 피연산자에 할당
+    a--;
+    console.log(a); // 5
+
+
+
+    // 피연산자가 오른쪽에 있을 때
+    ++a;
+    console.log(a); // 6
+    --a;
+    console.log(a); // 5
+
+    // 오른쪽에 있을 때와 왼쪽에 있을 차이
+    // 왼쪽에 있으면 사용 후에 더함
+    // 오른쪽에 있으면 더한 후에 사용
+
+    console.log(a++); // 5
+    console.log(a); // 6
+
+    console.log(++a); // 7
+    console.log(--a); // 6
+
+</script>
+</body>
+</html>
