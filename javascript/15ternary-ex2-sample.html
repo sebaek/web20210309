@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+    div {
+        font-size: 100px;
+    }
+</style>
+</head>
+<body>
+    <div onclick="change()"><i class="far fa-heart"></i></div>
+
+    <script>
+        function change() {
+            var i = document.querySelector("div>i");
+
+            var className = (i.className == "far fa-heart") 
+                            ? "fas fa-heart" 
+                            : "far fa-heart";
+            i.className = className;
+        }
+    </script>
+</body>
+</html>
