@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+점수: <input type="text">
+<br>
+<button onclick="score()">등급확인</button>
+<p id="result"></p>
+
+<script>
+    function score(params) {
+        var score = document.querySelector("input").value;
+        score = Number(score);
+
+        if (score >= 90) {
+            document.getElementById("result").innerHTML = "A학점";
+        } else if (score >= 80) {
+            document.getElementById("result").innerHTML = "B학점";
+        }
+
+    }
+</script>
+
+</body>
+</html>
