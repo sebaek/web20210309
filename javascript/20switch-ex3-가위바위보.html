@@ -3,30 +3,33 @@
 <head>
 <link rel="stylesheet" href="../css/all.min.css">
 <style>
+    body {
+        text-align: center;
+    }
     .container {
-        width: 50%;
         display: flex;
         align-items: center;
     }
     .container > div {
-        width: 30%;
-        text-align: center;
+        width: 10%;
     }
     .container > div:nth-child(2) {
-        flex: 1;
+        text-align: center;
     }
     .user,
     .computer {
+        flex: 1;
         font-size: 100px;
     }
     .user {
+        text-align: right;
         color: skyblue;
     }
     .computer {
+        text-align: left;
         color: orange;
     }
     #result {
-        width: 50%;
         font-weight: bold;
         text-align: center;
         font-size: 30px;
