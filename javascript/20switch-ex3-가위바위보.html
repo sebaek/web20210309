@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <button onclick="game(1)"><i class="fas fa-hand-rock"></i></button>
+    <button onclick="game(2)"><i class="fas fa-hand-scissors"></i></button>
+    <button onclick="game(3)"><i class="fas fa-hand-paper"></i></button>
+
+    <!-- .container>.user+div+.computer -->
+    <div class="container">
+        <div class="user"></div>
+        <div>VS</div>
+        <div class="computer"></div>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        function game(user) {
+            // 1: 바위, 2:가위, 3:보
+            var computer = Math.floor(Math.random() * 3) + 1;
+            setIcon(user, document.querySelector(".user"));
+            setIcon(computer, document.querySelector(".computer"));
+
+            var resultText = "";
+            if (user == computer) {
+                resultText = "비겼습니다.";
+            } else if (user == 1 && computer == 2) {
+                resultText = "이겼습니다.";
+            } else if (user == 2 && computer == 3) {
+                resultText = "이겼습니다.";
+            } else if (user == 3 && computer == 1) {
+                resultText = "이겼습니다.";
+            } else {
+                resultText = "졌습니다.";
+            }
+            document.getElementById('result').innerHTML = resultText;
+        }
+
+        function setIcon(hand, elem) {
+            switch (hand) {
+                case 1:
+                    elem.innerHTML= "<i class='fas fa-hand-rock'></i>";
+                    break;
+                case 2:
+                    elem.innerHTML = "<i class='fas fa-hand-scissors'></i>";
+                    break;
+                case 3:
+                    elem.innerHTML = "<i class='fas fa-hand-paper'></i>";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
