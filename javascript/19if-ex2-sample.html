@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+나이 : <input type="text"> 
+<br>
+<button onclick="votable()">투표 가능?</button>
+
+<!-- p#result -->
+<p id="result"></p>
+
+<script>
+    function votable() {
+        var age = document.querySelector("input").value;
+        age = Number(age);
+        if (age >= 20) {
+            document.getElementById("result").innerHTML = '투표 가능';
+        }
+    }
+</script>
+</body>
+</html>
