@@ -17,7 +17,7 @@
     function votable() {
         var age = document.querySelector("input").value;
         age = Number(age);
-        if (age >= 20) {
+        if (age >= 20 && age <= 70) {
             document.getElementById("result").innerHTML = '투표 가능';
         } else {
             document.getElementById('result').innerHTML = "투표 불가능";
