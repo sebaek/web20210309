@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<script>
+    console.log("statement1...");
+
+    // 실행 순서
+    // 1번 --> 2번 -true-> code block --> 3번 --> 2번 
+    //             -false-> 종료
+
+    for (var i = 0; i < 3; i++) {
+        console.log("반복할 코드1");
+        console.log("반복할 코드2");
+    }
+
+
+    console.log("statement2...");
+</script>
+</body>
+</html>
