@@ -11,9 +11,14 @@
 <body>
     <div id="result"></div>
 <script>
-    for() {
-        
+    var txt = "";
+    for(var i = 0; i < 5; i++) {
+        for(var j = 0; j <= i; j++) {
+            txt += "*"
+        }
+        txt += "<br>";
     }
+    document.getElementById("result").innerHTML = txt;
 
 </script>
 </body>
