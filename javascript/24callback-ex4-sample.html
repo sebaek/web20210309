@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<!-- input#input$*2 -->
+<input type="text" id="input1">
+<input type="text" id="input2">
+
+<br>
+<!-- button*2[onclick]>i.fas.fa-plus -->
+<button onclick="process('+')"><i class="fas fa-plus"></i></button>
+<button onclick="process('-')"><i class="fas fa-minus"></i></button>
+
+<!-- #result -->
+<div id="result"></div>
+
+<script>
+    function add(a, b) {
+        return a + b;
+    }
+
+    function minus(x, y) {
+        return x - y;
+    }
+
+    function calc(p1, p2, oper) {
+        return oper(p1, p2);
+    }
+
+    function process(op) {
+        var x = Number(document.getElementById("input1").value);
+        var y = Number(document.getElementById("input2").value);
+
+        var res = 0;
+
+        switch (op) {
+            case '+':
+                res = calc(x, y, add);
+                break;
+        
+            case '-':
+                res = calc(x, y, minus);
+                break;
+        }
+
+        document.getElementById('result').innerHTML = res;
+    }
+</script>
+
+</body>
+</html>
