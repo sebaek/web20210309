@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<!-- h3#result -->
+<h3 id="result"></h3>
+<!-- button{번호 출력}[onclick] -->
+<button onclick="lotto()">번호 출력</button>
+<script>
+    function lotto() {
+        var numbers = [];
+
+        while (numbers.length < 6) {
+            var newNumber = getRandomNumber();
+
+            if (!numbers.includes(newNumber)) { //배열에 없을 때
+                numbers.push(newNumber);
+            }
+        }
+
+        document.getElementById("result").innerHTML = "";
+        for (i = 0; i < numbers.length; i++) {
+            document.getElementById("result").innerHTML += numbers[i] + ",";
+        }
+    }
+
+    function getRandomNumber() {
+        return Math.floor(Math.random() * 45) + 1;
+    }
+
+</script>
+</body>
+</html>
