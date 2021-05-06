@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        $("h1").click(function() {
+            var t = $(this).text();
+            // console.log(t);
+            $("#input1").val(t);
+        });
+    });
+</script>
+</head>
+<body>
+    <input type="text" id="input1">
+<!-- h1*5>lorem1 -->
+<h1>Lorem.</h1>
+<h1>Quisquam?</h1>
+<h1>Suscipit.</h1>
+<h1>Magnam.</h1>
+<h1>Perspiciatis!</h1>
+</body>
+</html>
