@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        $("#btn1").on("click", function() {
+            $("h1").hide();
+        });
+
+        $("#btn2").on("click", function() {
+            $("h1").show();
+        });
+    });
+</script>
+</head>
+<body>
+<button id="btn1">숨기기</button>
+<button id="btn2">보여주기</button>
+
+<h1>Lorem, ipsum dolor.</h1>
+
+</body>
+</html>
