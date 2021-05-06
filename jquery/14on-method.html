@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        $("#input1").on("keyup", function() {
+            var t = $(this).val();
+            $("#head1").text(t);
+        })
+    });
+</script>
+</head>
+<body>
+<!-- input#input1+h1#head1 -->
+<input type="text" id="input1">
+<h1 id="head1"></h1>
+</body>
+</html>
