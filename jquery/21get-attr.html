@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        $("h1").click(function() {
+            var i = $(this).attr("id");
+            console.log(i);
+
+            var c = $(this).attr("class");
+            console.log(c);
+        });
+    });
+</script>
+</head>
+<body>
+<!-- h1#head1.my-head[title=hello]>lorem -->
+<h1 id="head1" class="my-head" title="hello">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ipsum facere blanditiis facilis alias! Voluptatum laboriosam beatae officia corporis rerum provident aspernatur sequi, architecto quos laborum in odio laudantium ab?</h1>
+</body>
+</html>
