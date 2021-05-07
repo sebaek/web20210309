@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        $("#btn1").click(function() {
+            var t = $("#input1").val();
+            $("#ul1").append("<li>" + t + "</li>");
+        });
+    });
+</script>
+</head>
+<body>
+<!-- input#input1+button#btn1+ul#ul1 -->
+<input type="text" id="input1">
+<button id="btn1"><i class="fas fa-plus"></i></button>
+<ul id="ul1"></ul>
+</body>
+</html>
