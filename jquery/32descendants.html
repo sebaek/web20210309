@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        // $("#div1").children().css("color", "blue");
+        $("#div1>*").css("color", "red");
+    });
+</script>
+</head>
+<body>
+    <!-- div#div1>h1*3>lorem1^h2*3>lorem1 -->
+    <div id="div1">
+        <h1>Lorem.</h1>
+        <h1>Necessitatibus.</h1>
+        <h1>Sapiente.</h1>
+        <h2>Lorem.</h2>
+        <h2>Dolore.</h2>
+        <h2>Nostrum?</h2>
+    </div>
+</body>
+</html>
