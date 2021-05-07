@@ -11,7 +11,7 @@
 			"<style>",
 			"</style>",
 			"<script>",
-			"\t$(document).ready(funtion() {",
+			"\t$(document).ready(function() {",
 			"\t\t",
 			"\t});",
 			"</script>",
